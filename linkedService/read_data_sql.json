@@ -1,0 +1,17 @@
+{
+	"name": "read_data_sql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "pro1server.database.windows.net",
+			"database": "sqlazurepro1",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "adminarunava",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDZCOUFEMzJCLTlCNDUtNDA5Ri04ODU3LUVFMTA3MDk0Nzk0RV9lNDlhMmE4ZC00ZTg3LTQ0YzUtYmRhNC1mNDYwNjRlMTFmYTkiDQp9"
+		}
+	}
+}

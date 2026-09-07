@@ -110,7 +110,7 @@
 							"json_cdc": "cdc.json"
 						}
 					},
-					"firstRowOnly": true
+					"firstRowOnly": false
 				}
 			},
 			{

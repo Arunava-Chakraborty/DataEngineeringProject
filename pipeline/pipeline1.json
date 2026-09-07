@@ -59,7 +59,10 @@
 					},
 					"dataset": {
 						"referenceName": "Json1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "bronze"
+						}
 					},
 					"firstRowOnly": true
 				}

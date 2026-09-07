@@ -20,7 +20,19 @@
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().json_cdc",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().cdc_folder",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().container",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {

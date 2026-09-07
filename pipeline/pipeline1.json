@@ -5,6 +5,8 @@
 			{
 				"name": "DataIngestion",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -61,7 +63,9 @@
 						"referenceName": "Json1",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": "bronze"
+							"container": "bronze",
+							"cdc_folder": "cdc",
+							"json_cdc": "cdc.json"
 						}
 					},
 					"firstRowOnly": true

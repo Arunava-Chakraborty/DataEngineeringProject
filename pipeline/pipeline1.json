@@ -131,11 +131,22 @@
 				}
 			},
 			{
-				"name": "If Condition1",
+				"name": "If_Incremental",
 				"type": "IfCondition",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "DataIngestion",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@greater(activity('DataIngestion').output.dataRead , 0 )",
+						"type": "Expression"
+					},
 					"ifTrueActivities": [
 						{
 							"name": "update_last_cdc",
